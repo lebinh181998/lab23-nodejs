@@ -1,0 +1,7 @@
+{
+  "env": {
+    "MONGO_USER": "binhlfx23210",
+    "MONGO_PASSWORD":"0z0z0z", 
+    "MONGO_DEFAULT_DATABASE":"shop"
+  }
+}
