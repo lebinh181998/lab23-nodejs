@@ -43,7 +43,7 @@ const MONGO_URI = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_P
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://lab23-nodejs-c22d3.web.app",
     methods: ["POST", "GET", "PUT", "DELETE", "PATCH"],
   })
 );
