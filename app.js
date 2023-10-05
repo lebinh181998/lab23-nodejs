@@ -32,10 +32,6 @@ const fileFilter = (req, file, cb) => {
   }
 };
 
-console.log(process.env.MONGO_USER);
-console.log(process.env.MONGO_PASSWORD);
-console.log(process.env.MONGO_DEFAULT_DATABASE);
-
 const MONGO_URI = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.iewp9yb.mongodb.net/${process.env.MONGO_DEFAULT_DATABASE}`;
 
 // const store = new MongoDBSession({
