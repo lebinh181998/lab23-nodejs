@@ -43,14 +43,14 @@ const MONGO_URI = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_P
 //   collection: "sessions",
 // });
 
-app.use(
-  cors({
-    origin: "https://lab23nodejs.web.app",
-    methods: ["POST", "GET", "PUT", "DELETE", "PATCH"],
-  })
-);
-app.set("trust proxy", 1);
-// app.use(cors());
+// app.use(
+//   cors({
+//     origin: "https://lab23nodejs.web.app",
+//     methods: ["POST", "GET", "PUT", "DELETE", "PATCH"],
+//   })
+// );
+// app.set("trust proxy", 1);
+app.use(cors());
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 // app.use(
